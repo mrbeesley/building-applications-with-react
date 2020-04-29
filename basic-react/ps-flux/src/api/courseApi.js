@@ -23,7 +23,7 @@ export function saveCourse(course) {
     headers: { "content-type": "application/json" },
     body: JSON.stringify({
       ...course,
-      authorId: parseInt(course.authorid, 10),
+      authorId: parseInt(course.authorId, 10),
     }),
   })
     .then(handleResponse)
